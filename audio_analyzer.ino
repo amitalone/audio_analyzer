@@ -12,7 +12,7 @@
 #define COLUMNS 24
 #define NUM_LEDS ROWS * COLUMNS
 #define START_FREQENCY_BAND_POSITION 2
-#define DEBUG 1
+#define DEBUG 0
 
 CRGB leds[NUM_LEDS];
 uint8_t peaks[COLUMNS];
@@ -161,13 +161,11 @@ void getSamples() {
     Serial.print("\t");
     }
     Serial.println(""); */
-
-
   }
   
   int x =0;
   for(uint8_t i = START_FREQENCY_BAND_POSITION; i <= COLUMNS+START_FREQENCY_BAND_POSITION; i++){
-          x=fft_lin_out[i+1]/1;
+          x=fft_lin_out[i+1];
           x = constrain(x, 5, 100);
           uint8_t index = i-START_FREQENCY_BAND_POSITION;
           x = map(x, 5, 100, 0, 11);
