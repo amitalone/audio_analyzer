@@ -6,11 +6,11 @@ Primary user of this project is my 3 year old who just wanted to see “dancing 
 This code is scalable to larger WS2812b matrix, each pixel takes 3 bytes, I am using 12X24 leds. Further FFT computation is memory intensive, I am using 128 bin FFT which takes around 512 bytes (http://wiki.openmusiclabs.com/wiki/ArduinoFFT).  Thus, code takes more than 75% of available 2k Arduino SRAM.  If you are planning to use larger matrix & more frequency band, it is recommended to go with Teensy or other board with more SRAM.
 
 ## List of components 
-1.	2 registers 
-2.	Power supply 
+1.	Registers, 2 X 100 Ω, 1 X 470Ω 
+2.	Power supply, 5V 20AMPs (You can choose a PS with lower current ratings, depending upnon number of LEDs, .6mA per LED at full brightness) 
 3.	ws2812b led strip
-4.	3.5 audio jacks 
-5.	Tactile switches 3
+4.	3.5 audio jacks X 2
+5.	Tactile switches X 3
 
 ## Schematic diagram
  
