@@ -13,10 +13,12 @@ This code is scalable to larger WS2812b matrix, each pixel takes 3 bytes, I am u
 5.	Tactile switches 3
 
 ## Schematic diagram
-
+ 
+<img src="https://github.com/amitalone/audio_analyzer/blob/master/audio_analyzer_schem.png" width="500px" height="500px" />
+ 
 ## Building Display Screen
 
 To build a display from LED strip you need arrange them in a matrix form, such that each row & column represents a vector position on strip. Following diagram shows sample arrangements.
 
-![Led Matrix Board](https://github.com/amitalone/audio_analyzer/blob/master/led-matrix.png =250x)
+<img src="https://github.com/amitalone/audio_analyzer/blob/master/led-matrix.png" width="250px"/>
 
