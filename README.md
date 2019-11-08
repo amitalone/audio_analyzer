@@ -5,7 +5,9 @@ Code uses Arduino’s ADC capability to read analog signal from external audio s
 Primary user of this project is my 3 year old who just wanted to see “dancing lights”. This project is intended for general audio / Arduino / WS2812b hobbyist. 
 This code is scalable to larger WS2812b matrix, each pixel takes 3 bytes, I am using 12X24 leds. Further FFT computation is memory intensive, I am using 128 bin FFT which takes around 512 bytes (http://wiki.openmusiclabs.com/wiki/ArduinoFFT).  Thus, code takes more than 75% of available 2k Arduino SRAM.  If you are planning to use larger matrix & more frequency band, it is recommended to go with Teensy or other board with more SRAM.
 
-## List of components 
+## Demo
+
+## List of components
 1.	Registers, 2 X 100 Ω, 1 X 470Ω 
 2.	Power supply, 5V 20AMPs (You can choose a PS with lower current ratings, depending upnon number of LEDs, .6mA per LED at full brightness) 
 3.	ws2812b led strip
@@ -22,3 +24,19 @@ To build a display from LED strip you need arrange them in a matrix form, such t
 
 <img src="https://github.com/amitalone/audio_analyzer/blob/master/led-matrix.png" width="250px"/>
 
+## Code Flowchart
+
+<img src="https://github.com/amitalone/audio_analyzer/blob/master/flow-chart.png" width="400px" height="350px" />
+
+## Environment
+Arduino 1.6.12 <br>
+FastLED 3.3.1 <br>
+[Arduino FFT library (V3.0)](http://wiki.openmusiclabs.com/wiki/ArduinoFFT?action=AttachFile&do=view&target=ArduinoFFT3.zip)
+
+## Adding new features
+
+### Animation
+
+### Colors 
+
+### IO
