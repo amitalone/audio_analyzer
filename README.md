@@ -36,7 +36,17 @@ FastLED 3.3.1 <br>
 ## Adding new features
 
 ### Animation
+As part of FFT computation we get 128 bin, representing peak values of a perticular frequency band. I have built matrix with 24 coloumns, so code deals with 24 bins.
+Each animation function takes array of 24 peak values. Next we scan vertical lines / rows, ploting these peaks the way we want to animate.
 
+Eg. Have a look at simplest function in Animation.cpp:columnGraph, it takes 24 peak values and we are putting these values column by column.
+Or Animation.cpp:lineGraph where we are ploting Y values as peak numbers on XY marix.
+
+To add new animation pattern, you will need to scan all rows, for Y=0 to heightOfMatrix and then X value at each Column 
 ### Colors 
-
+All color function takes parameter x & y, representing current position of pixel on the matrix. You can then return any color depending on pixel position.
+Eg. ColorFunctions.cpp:ColorFunctions returns black color irrespective of x,y postion. If you are looking to paint frame with red, you can return CRGB(255, 0, 0).
+X,Y can be use to introduce varriance in colors.
+ColorFunctions.cpp:colorBand2 spreads array of colors after every 4 LEDs. 
+You can be creative with colors in function with any custom logic, as long as you return CRGB it will work.
 ### IO
