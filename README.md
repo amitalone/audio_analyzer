@@ -7,6 +7,11 @@ This code is scalable to larger WS2812b matrix, each pixel takes 3 bytes, I am u
 
 ## Demo
 
+<img src="https://github.com/amitalone/audio_analyzer/blob/master/assets/1.gif" alt="1" width="200" height="150"> <img src="https://github.com/amitalone/audio_analyzer/blob/master/assets/2.gif" alt="2" width="200" height="150"> <img src="https://github.com/amitalone/audio_analyzer/blob/master/assets/3.gif" alt="3" width="200" height="150"> <img src="https://github.com/amitalone/audio_analyzer/blob/master/assets/4.gif" alt="4" width="200" height="150">
+
+[![IMAGE ALT TEXT HERE](https://github.com/amitalone/audio_analyzer/blob/master/assets/ytthumb.png)](https://www.youtube.com/watch?v=V-BpAYK_LWs)
+
+
 ## List of components
 1.	Registers, 2 X 100 Ω, 1 X 470Ω 
 2.	Power supply, 5V 20AMPs (You can choose a PS with lower current ratings, depending upnon number of LEDs, .6mA per LED at full brightness) 
